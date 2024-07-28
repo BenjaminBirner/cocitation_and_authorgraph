@@ -1,0 +1,440 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.grobid",
+    "module": "grobid-trainer",
+    "version": "0.7.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "grobid-trainer-0.7.1.jar",
+          "url": "grobid-trainer-0.7.1.jar",
+          "size": 15087807,
+          "sha512": "ec8f67b96b4655f1dab028754cee56a6021b7a12c62df3bf9014985be8bfc0b9c897f0428b0afdeef0e363512740de25dcb92692b8d83412ab53f8cb8ca5f573",
+          "sha256": "9930e4ffc9adb217fe2b814f9401d947e49093af615b757ac85d6058ef9f7075",
+          "sha1": "86696fcda8d7d22ac9ea85e81d066583a685597c",
+          "md5": "b9135f9d1aa4044a62c6af309162e91e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.cybozu.labs",
+          "module": "langdetect",
+          "version": {
+            "requires": "1.1-20120112"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "com.rockymadden.stringmetric",
+          "module": "stringmetric-core_2.10",
+          "version": {
+            "requires": "0.27.3"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "commons-pool",
+          "module": "commons-pool",
+          "version": {
+            "requires": "1.6"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.5"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.6"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-collections4",
+          "version": {
+            "requires": "4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-text",
+          "version": {
+            "requires": "1.8"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "commons-dbutils",
+          "module": "commons-dbutils",
+          "version": {
+            "requires": "1.7"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.2-jre"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.httpcomponents",
+          "module": "httpclient",
+          "version": {
+            "requires": "4.5.3"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "black.ninia",
+          "module": "jep",
+          "version": {
+            "requires": "4.0.2"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-core",
+          "version": {
+            "requires": "2.10.1"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.10.1"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.module",
+          "module": "jackson-module-afterburner",
+          "version": {
+            "requires": "2.10.1"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-yaml",
+          "version": {
+            "requires": "2.10.1"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "xml-apis",
+          "module": "xml-apis",
+          "version": {
+            "strictly": "1.4.01",
+            "requires": "1.4.01"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "org.grobid",
+          "module": "grobid-core",
+          "version": {
+            "requires": "0.7.1"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "me.tongfei",
+          "module": "progressbar",
+          "version": {
+            "requires": "0.9.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-log4j12",
+          "version": {
+            "requires": "1.7.25"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.25"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-jdk14",
+          "version": {
+            "requires": "1.7.25"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "grobid-trainer-0.7.1.jar",
+          "url": "grobid-trainer-0.7.1.jar",
+          "size": 15087807,
+          "sha512": "ec8f67b96b4655f1dab028754cee56a6021b7a12c62df3bf9014985be8bfc0b9c897f0428b0afdeef0e363512740de25dcb92692b8d83412ab53f8cb8ca5f573",
+          "sha256": "9930e4ffc9adb217fe2b814f9401d947e49093af615b757ac85d6058ef9f7075",
+          "sha1": "86696fcda8d7d22ac9ea85e81d066583a685597c",
+          "md5": "b9135f9d1aa4044a62c6af309162e91e"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "grobid-trainer-0.7.1-onejar.jar",
+          "url": "grobid-trainer-0.7.1-onejar.jar",
+          "size": 78682263,
+          "sha512": "7f982714f31b651648d1a9ec0174ca3dce3906358208adab1d4219056452d1ad67d99b1e49885b82d4061cbcefbc93e3304af86ca93648f03ff95442bdac2a14",
+          "sha256": "1322c4ea183d9de5479e2a18294fa15917718f3483c044f63d0520f647d64b04",
+          "sha1": "89fe401f0de9430d16f7104f4f906bbed40e33db",
+          "md5": "b2b75ac89cba1aac0e62bdf74863ea11"
+        }
+      ]
+    }
+  ]
+}
